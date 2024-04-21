@@ -28,7 +28,7 @@
 
     - name: Import MS GPG key
       ansible.builtin.apt_key:
-        key: https://packages.microsoft.com/keys/microsoft.asc
+        url: https://packages.microsoft.com/keys/microsoft.asc
         state: present
 
     - name: Install Flatpak packages
